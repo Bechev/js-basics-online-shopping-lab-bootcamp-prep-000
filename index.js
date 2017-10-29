@@ -80,13 +80,6 @@ function removeFromCart(item) {
     }
   return cart
 }
-  /*if( object.hasOwnProperty(item)===false){
-    console.log("That item is not in your cart.")
-  } else {
-    cart.splice(i,1)
-    console.log(`Removed ${item} from your cart`)
-  }
-  return cart*/
 
 function placeOrder(cardNumber) {
   // write your code here
