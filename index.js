@@ -70,14 +70,23 @@ function removeFromCart(item) {
     var key = Object.keys(cart[i])
     object[key] = cart[i]
   }
-  if( object.hasOwnProperty(item)===false){
+  for (item in object){
+    if(object.hasOwnProperty(item)){
+      cart.splice(i,1)
+      console.log(`Removed ${item} from your cart`)
+    }else{
+      console.log("That item is not in your cart.")
+    }
+  }
+  return cart
+}
+  /*if( object.hasOwnProperty(item)===false){
     console.log("That item is not in your cart.")
   } else {
     cart.splice(i,1)
     console.log(`Removed ${item} from your cart`)
   }
-  return cart
-}
+  return cart*/
 
 function placeOrder(cardNumber) {
   // write your code here
