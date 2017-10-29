@@ -36,7 +36,7 @@ function viewCart(){
       var cartList =""
       if( i ===0){
         cartList= `In your cart, you have ${cartItems[i]}`
-console.log(cartList])
+console.log(cartList)
       }
     }
   }
