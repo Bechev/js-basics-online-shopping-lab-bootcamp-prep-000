@@ -35,7 +35,7 @@ function viewCart(){
     for(var i = 0; i<cartItems.length;i++){
       var cartList =""
       if( i ===0){
-        cartList= `In your cart, you have ${cartItems[i]}` 
+        cartList= `In your cart, you have ${cartItems[i]}`
 console.log(cartList])
       }
     }
