@@ -32,8 +32,8 @@ function viewCart(){
 //console.log(object[item])
       cartItems.push(Object.keys(cart[i])[0] + " at $" + object[item])
     }
-    for(var i = 0; i<(cartItems.length-1);i++){
-      var cartList = ""
+    var cartList = ""
+    for(var i = 0; i<cartItems.length;i++){
       if( i ===0){
         cartList= `In your cart, you have ${cartItems[i]}`
       }else {
