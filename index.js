@@ -36,11 +36,13 @@ function viewCart(){
     for(var i = 0; i<cartItems.length;i++){
       if( i ===0){
         cartList= `In your cart, you have ${cartItems[i]}`
+      }else if(i=== cartItems.length){
+        cartList = cartList + "and " + cartItems[i]  
       }else {
-        cartList = cartList+", " +  cartItems[i]
+        cartList = cartList +", " +  cartItems[i]
       }
     }
-    cartList = " and " + cartList + "."
+    cartList = cartList + "."
     console.log(cartList)
   }
 }
