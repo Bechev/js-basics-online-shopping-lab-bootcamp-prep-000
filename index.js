@@ -20,8 +20,14 @@ function addToCart(item) {
  return cart
 }
 
-
-function viewCart() {
+function viewCart(){
+  if(cart.length===0){
+    console.log("Your shopping cart is empty.")
+  }else{
+    
+  }
+}
+/*function viewCart() {
   // write your code here
   var name=""
   var i= 0
@@ -39,7 +45,7 @@ function viewCart() {
   }
 console.log("In your cart, you have " + name);
 
-}
+}*/
 
 
 function total() {
