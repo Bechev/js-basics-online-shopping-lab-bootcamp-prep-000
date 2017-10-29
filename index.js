@@ -71,6 +71,8 @@ function removeFromCart(item) {
       return cart
     } else {
       cart.splice(i,1)
+      console.log(`Removed ${item} from your cart`)
+      return cart
     }
   }
 }
