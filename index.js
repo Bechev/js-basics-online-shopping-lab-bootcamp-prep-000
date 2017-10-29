@@ -40,7 +40,7 @@ function viewCart(){
         cartList = cartList+", " +  cartItems[i]
       }
     }
-    cartList = "and" + cartList + "."
+    cartList = " and " + cartList + "."
     console.log(cartList)
   }
 }
