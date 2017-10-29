@@ -68,19 +68,16 @@ function removeFromCart(item) {
   for(var i=0;i<cart.length;i++){
     var tempObject = cart[i]
     var key = Object.keys(cart[i])
+    var itemComp = Object.keys(cart[i])[0]
     object[key] = cart[i]
-    if(key === item){
+    if(itemComp === item){
       cart.splice(i,1)
     }
   }
-  for (key in object){
     if(object.hasOwnProperty(item)){
-      cart.splice(i,1)
-      console.log(`Removed ${item} from your cart`)
     }else{
       console.log("That item is not in your cart.")
     }
-  }
   return cart
 }
   /*if( object.hasOwnProperty(item)===false){
