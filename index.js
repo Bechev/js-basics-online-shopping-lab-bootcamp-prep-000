@@ -50,29 +50,16 @@ function viewCart(){
     console.log(cartList)
   }
 }
-/*function viewCart() {
-  // write your code here
-  var name=""
-  var i= 0
-
-  if(cart.length === 0){
-    console.log("Your shopping cart is empty.")
-  }else{
-    while(i < cart.length -2) {
-      var items = Object.keys(cart[i])[0]
-      name =  name + items + " at $" + var object[items] + ",";
-      i++
-    }
-    var items= Object.keys(cart[i])[0]
-    name =  name + items + " at $" + var object[items] + ".";
-  }
-console.log("In your cart, you have " + name);
-
-}*/
-
 
 function total() {
   // write your code here
+  var total = 0
+  for (var i=0; i<cart.length;i++){
+    var object = cart[i]
+    var item = Object.keys(cart[i])
+    total = total + parseInt(object[item])
+  }
+  return total
 }
 
 function removeFromCart(item) {
