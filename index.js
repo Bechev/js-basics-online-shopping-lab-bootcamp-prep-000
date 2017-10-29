@@ -37,7 +37,7 @@ function viewCart(){
       if( i ===0){
         cartList= `In your cart, you have ${cartItems[i]}`
       }else {
-        cartList = cartList+"," +  cartItems[i]
+        cartList = cartList+", " +  cartItems[i]
       }
     }
     cartList = cartList + "."
