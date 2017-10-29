@@ -66,7 +66,8 @@ function removeFromCart(item) {
   // write your code here
   var object ={}
   for(var i=0;i<cart.length;i++){
-    var item = Object.keys(object[item])
+    var tempObject = cart[i]
+    var item = Object.keys(tempObject[item])
     object[item] = cart[i]
   }
   if( object.hasOwnProperty(item)===false){
