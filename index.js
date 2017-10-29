@@ -37,7 +37,11 @@ function viewCart(){
       if( i ===0){
         cartList= `In your cart, you have ${cartItems[i]}`
       }else if(i === cartItems.length-1){
-        cartList = cartList + ", and " + cartItems[i]
+        if(cart.length ===2){
+          cartList = cartList + " and " + cartItems[i]
+        }else{
+            cartList = cartList + ", and " + cartItems[i]
+        }
       }else {
         cartList = cartList +", " +  cartItems[i]
       }
