@@ -69,7 +69,7 @@ function removeFromCart(item) {
     var tempObject = cart[i]
     var key = Object.keys(cart[i])
     object[key] = cart[i]
-    if(object.key === item){
+    if(key === item){
       cart.splice(i,1)
     }
   }
