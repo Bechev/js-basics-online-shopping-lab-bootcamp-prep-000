@@ -64,17 +64,18 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  var object ={}
   for(var i=0;i<cart.length;i++){
-    var object = cart[i]
-    if( object.hasOwnProperty(item)===false){
-      console.log("That item is not in your cart.")
-      return cart
-    } else {
-      cart.splice(i,1)
-      console.log(`Removed ${item} from your cart`)
-      return cart
-    }
+    var item = Object.keys(object[items])
+    object[item] = cart[i]
+  }      
+  if( object.hasOwnProperty(item)===false){
+    console.log("That item is not in your cart.")
+  } else {
+    cart.splice(i,1)
+    console.log(`Removed ${item} from your cart`)
   }
+  return cart
 }
 
 function placeOrder(cardNumber) {
