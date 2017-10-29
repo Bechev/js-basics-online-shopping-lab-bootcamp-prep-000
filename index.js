@@ -21,12 +21,12 @@ function addToCart(item) {
 }
 
 function viewCart(){
-  var object
   if(cart.length===0){
     console.log("Your shopping cart is empty.")
   }else{
     var cartItems=[];
     for(var i=0; i< cart.length ;i++){
+      var object ={cart[i]}
       console.log(object[items])
       cartItems.push(Object.keys(cart[i])[0] + " at " )
     }
