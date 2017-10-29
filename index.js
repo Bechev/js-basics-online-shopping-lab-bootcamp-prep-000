@@ -29,9 +29,11 @@ function viewCart(){
       console.log(cart[i])
       var object = cart[i]
       var item = Object.keys(cart[i])
-console.log(object[item])
+//console.log(object[item])
       cartItems.push(Object.keys(cart[i])[0] + " at " + object.value)
     }
+for(var i = 0; i<cartItems.length;i++)
+console.log(cartItems[i])
   }
 }
 /*function viewCart() {
