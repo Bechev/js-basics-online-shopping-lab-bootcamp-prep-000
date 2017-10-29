@@ -25,7 +25,7 @@ function viewCart(){
     console.log("Your shopping cart is empty.")
   }else{
     var cartItems=[];
-    for(var i=0; i<cart.length);i++){
+    for(var i=0; i< cart.length ;i++){
       console.log(cart[i])
       cartItems.push(cart[i])
     }
