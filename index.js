@@ -28,6 +28,7 @@ function viewCart(){
     for(var i=0; i< cart.length ;i++){
       console.log(cart[i])
       var object = cart[i]
+console.log(object.value)
       cartItems.push(Object.keys(cart[i])[0] + " at " + object.value)
     }
   }
