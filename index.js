@@ -27,7 +27,7 @@ function viewCart(){
     var cartItems=[];
     for(var i=0; i< cart.length ;i++){
       var object ={cart[i]}
-      console.log(object[items])
+      console.log(cart[i])
       cartItems.push(Object.keys(cart[i])[0] + " at " )
     }
   }
