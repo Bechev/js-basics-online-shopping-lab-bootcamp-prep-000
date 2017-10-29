@@ -26,7 +26,7 @@ function viewCart(){
   }else{
     var cartItems=[];
     for(var i=0; i< cart.length ;i++){
-      console.log(cart[i])
+      console.log(Object.keys(cart[i])[0])
       cartItems.push(cart[i])
     }
   }
