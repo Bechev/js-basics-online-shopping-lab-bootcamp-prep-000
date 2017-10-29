@@ -32,8 +32,8 @@ function viewCart(){
 //console.log(object[item])
       cartItems.push(Object.keys(cart[i])[0] + " at $" + object[item])
     }
-for(var i = 0; i<cartItems.length;i++)
-console.log(cartItems[i])
+    for(var i = 0; i<cartItems.length;i++){
+    console.log(cartItems[i])}
   }
 }
 /*function viewCart() {
