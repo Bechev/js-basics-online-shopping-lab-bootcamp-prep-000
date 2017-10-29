@@ -70,7 +70,7 @@ function removeFromCart(item) {
     var key = Object.keys(cart[i])
     object[key] = cart[i]
   }
-  for (item in object){
+  for (key in object){
     if(object.hasOwnProperty(item)){
       cart.splice(i,1)
       console.log(`Removed ${item} from your cart`)
